@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+section {
+    
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    
+    font-family: "Chalkboard SE";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+
+/* sản phẩm */
+.products .product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 210px;
+    height: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.product:hover{
+    transform: scale(1.1);
+}
+
+.product .sale {
+    background-color: red;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* ảnh sản phẩm */
+.product img {
+    width: 150px;
+    height: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    gap: 0;
+}
+/* giảm giá */
+.price {
+    color: #2df16e;
+    position: absolute;
+    left: 15px;
+    top: 200px;
+    font-size: 18px;
+}
+/* giá */
+.price del {
+    color: #999;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.rating {
+    color: gold;
+    position: absolute;
+    left: 15px;
+    top: 220px;
+}
+
+/* Đánh giá */
+.testimonials {
+    margin-top: 40px;
+    min-width: calc(100% / 3);
+        /* Hiển thị 3 phần tử */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.testimonial {
+    background-color: #FAEFEF;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    flex-shrink: 0;
+}
+
+.testimonial-list {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    max-width: 80%;
+}
+
+.testimonial-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.testimonial-rating{
+    color:gold
+}
+
+
+/* nút chuyển đánh giá */
+.arrow {
+font-size: 20px;
+    color: #777;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.arrow:hover {
+    transform: scale(1.5);
+    /* Phóng to lên 1.5 lần khi di chuột vào */
+}
+
+.left-arrow {
+    left: 300px;
+}
+
+.right-arrow {
+    right: 300px;
+}
+
+
+
+
+
+/* Photoshoots Section */
+.photoshoots {
+    margin-top: 40px;
+}
+
+.photoshoot-gallery {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.photoshoot-gallery img {
+
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* icon heart, shopping cart */
+.item {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    /* Căn phải phần tử con */
+    align-items: flex-start;
+    /* Căn trên phần tử con */
+}
+
+.icon {
+    position: absolute;
+    /* Đặt vị trí tuyệt đối cho icon */
+    top: 140;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    /* Khoảng cách giữa hai ảnh */
+}
+
+
+.icon img{
+    width: 20px;
+    height: 20px;
+}
+
+.Heart:hover{
+    transform: scale(1.5);
+}
+
